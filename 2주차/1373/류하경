@@ -1,0 +1,8 @@
+# 2진수 입력받기
+user = int(input(), 2)
+
+# 8진수로 변환하기
+result = format(user, 'o')
+
+# 결과 출력하기
+print(result)
