@@ -1,0 +1,23 @@
+# n, k 입력받기
+n, k = map(int, input().split())
+
+# 1부터 n까지 있는 정수 리스트 만들기
+n_list = []
+for element in range(1, n+1):
+  n_list.append(element)
+
+# n회 동안 리스트에서 숫자 하나씩 꺼내 새 리스트 만들기
+result = []
+i = 0
+while i <= n:
+  i += 1
+  idx = (k*i-1)%n
+  if n_list[idx] != 0:
+    result.append(n_list[idx])
+    n_list[idx] = 0
+  elif n_list[idx] == 0:
+    #
+
+#while은 for문으로 바꾸고 del[idx]한 후엔 n-=1
+
+print(result)
