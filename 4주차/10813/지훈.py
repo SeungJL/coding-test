@@ -10,3 +10,5 @@ for _ in range(M):
 # print
 for i in basket:
   print(i, end=' ')
+
+
