@@ -6,8 +6,8 @@ bool binary_search(int start, int end, int target) {
     if(start > end) return false;
     int mid = start + end >> 1; // (start + end)/2
     if(arr[mid] == target) return true;
-    if(arr[mid]<target) return binary_search(start, mid-1, target);
-    else return binary_search(mid+1, end, target);
+    if(arr[mid]<target) return binary_search(mid+1, end, target);
+    else return binary_search(start, mid-1, target);
 }
 
 int main() {
